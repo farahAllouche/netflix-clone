@@ -1,0 +1,45 @@
+.row {
+  color: white;
+  padding: 10px 30px;
+}
+
+.row__title {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.row__movies {
+  display: flex;
+  padding: 10px 10px 0px 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; /* Optional: Enable smooth scrolling on iOS devices */
+  scroll-behavior: smooth; /* Optional: Enable smooth scrolling */
+}
+
+.row__movies::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  max-height: 100px;
+  width: 100%;
+  padding-right: 8px;
+  transition: transform 450ms;
+  cursor: pointer;
+}
+
+.row__largePoster {
+  max-height: 250px;
+  padding-right: 10px;
+  transition: transform 450ms;
+  cursor: pointer;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__largePoster:hover {
+  transform: scale(1.09);
+}

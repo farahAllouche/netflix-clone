@@ -1,0 +1,119 @@
+.loginScreen__background {
+  background-image: url("https://raw.githubusercontent.com/thatanjan/netflix-clone-yt/youtube/media/banner.jpg");
+  object-fit: contain;
+  background-position: center center;
+  color: white;
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+  z-index: 1;
+}
+.loginScreen__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 30px 0 20px;
+}
+.faded-gradient {
+  background: linear-gradient(
+    180deg,
+    #181818 10%,
+    hsla(0, 0%, 9%, 0.98) 20%,
+    hsla(0, 0%, 9%, 0.97) 25%,
+    hsla(0, 0%, 9%, 0.95) 35%,
+    hsla(0, 0%, 9%, 0.94) 40%,
+    hsla(0, 0%, 9%, 0.92) 45%,
+    hsla(0, 0%, 9%, 0.9) 50%,
+    hsla(0, 0%, 9%, 0.87) 55%,
+    hsla(0, 0%, 9%, 0.82) 60%,
+    hsla(0, 0%, 9%, 0.75) 65%,
+    hsla(0, 0%, 9%, 0.63) 70%,
+    hsla(0, 0%, 9%, 0.45) 75%,
+    hsla(0, 0%, 9%, 0.27) 80%,
+    hsla(0, 0%, 9%, 0.15) 85%,
+    hsla(0, 0%, 9%, 0.08) 90%,
+    hsla(0, 0%, 9%, 0.03) 95%,
+    hsla(0, 0%, 9%, 0)
+  );
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.loginScreen__nav .netflix-logo {
+  width: 130px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #e50914;
+  color: white;
+}
+.signIn {
+  font-weight: 700;
+  height: min-content;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  height: 55px;
+}
+.searchBar .getStarted {
+  height: 100%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #e50914;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.searchBar input {
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem 0 0 0.2rem;
+  width: 30%;
+  padding: 5px;
+}
+.signIn:hover,
+.getStarted:hover {
+  background-color: #af060f;
+  transition: all 0.2s ease-in;
+}
+
+.loginScreen__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+}
+
+.loginScreen__content h1 {
+  padding-bottom: 20px;
+}
+
+.loginScreen__content h2 {
+  font-size: 1.3rem;
+  padding-bottom: 8px;
+}
+
+.loginScreen__content h3 {
+  font-size: 0.8rem;
+  padding-bottom: 8px;
+}
